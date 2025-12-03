@@ -64,7 +64,7 @@ public class MicRecognize {
         try (Model model = new Model(MODEL_PATH);
              Recognizer recognizer = new Recognizer(model, 16000)) {
 
-            // 🔥 CHANGE THIS STRING TO YOUR DEVICE NAME
+            // CHANGE THIS STRING TO YOUR DEVICE NAME
             String deviceName = "PD200X Podcast Microphone"; // or "USB", "AirPods", etc.
 
             TargetDataLine mic = getDeviceByName(deviceName, format);
